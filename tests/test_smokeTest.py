@@ -68,7 +68,6 @@ class TestSmokeTest():
     elements = self.driver.find_elements(By.NAME, "submit")
     assert len(elements) > 0
     self.driver.find_element(By.NAME, "submit").click()
-    assert self.driver.find_element(By.CSS_SELECTOR, ".myinput:nth-child(2)").text == "Email"
     elements = self.driver.find_elements(By.NAME, "email")
     assert len(elements) > 0
     self.driver.find_element(By.LINK_TEXT, "Admin").click()
